@@ -70,3 +70,12 @@ input[type="text"]{
     margin-left:30px ;
    
 }
+p{
+    display: inline-block;
+}
+hr{
+    width: 20rem;
+}
+.userGame{
+    display: none;
+}
