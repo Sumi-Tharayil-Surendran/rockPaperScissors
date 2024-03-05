@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,75 +6,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rockPaperScissorsLizardSpockGame</title>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="box">
         <div class="rules">
-        <div class="container">
-            <h1 id="heading">How to Play</h1><br>
-            <div class="main">
-                <p>Traditional game rock-paper-scissors is a way of villegers to settle their problems like land
-                    disputes.<br>
+            <div class="container">
+                <h1 id="heading">How to Play</h1><br>
+                <div class="main">
+                    <p>Traditional game rock-paper-scissors is a way of villagers to settle their problems like land
+                        disputes.<br>
+                        <br>
+                        This game is played in a series of rounds and the person who wins most rounds wins the game
+                    </p>
+                    <p><br>
+                        All you need to know is:<br>
+                        Rock🤘beats ✂️<br>
+                        Scissors✂️ beats Paper📃<br>
+                        Paper📃 beats Rock🤘</p>
                     <br>
-                    This game is played in a series of rounds and the person who wins most rounds wins the game
-                </p>
-                <p><br>
-                    All you need to know is:<br>
-                    Rock🤘beats ✂️<br>
-                    Scissors✂️ beats Paper📃<br>
-                    Paper📃 beats Rock🤘</p>
-                <br>
-                <input type="button" value="start" id="myButton">
+                    <input type="button" value="start" id="myButton">
+                </div>
+                <div class="main userlogin">
+                    <h2>Welcome to the game!!</h2>
+
+                    <br>
+                    <p id="error"></p>
+                    <br>
+                    <form id="form1">
+                        <input type="text" id="user" placeholder="Enter your Name" required>
+                        <br>
+                        <br>
+                        <br>
+                        <button id="myButton1">Lets go</button>
+                    </form>
+                </div>
+                <div class="main userGame">
+                    <h2 id="greet">Hello Sumi</h2>
+                    <h3>Choose from rock,paper scissors</h3>
+                    <p><strong>Rock</strong> beats
+                        <strong>scissors</strong> beats
+                        <strong> paper</strong> and <strong>paper</strong>
+                        beats<strong> scissors</strong>
+                    </p>
+                    <div><input type="text" id="input">
+                        <button onclick="myfunction()">Play</button>
+                    </div>
+                    <br>
+                    <div>
+                        <p id="you">You: </p> ||
+                        <p id="com"> Comp:</p>
+                    </div>
+                    <div>
+                        <p id="result">result</p>
+                    </div>
+                    <hr>
+
+                    <div>
+                        <h5>Scoreboard</h5>
+                        <p id="pscore">0</p>|
+                        <p id="cscore">0</p><br>
+                        <button onclick="reset()">Reset</button>
+                    </div>
+
+                    <footer class="myfooter">
+                        <p>&copy Layali 2024</p>
+                    </footer>
+
+                </div>
             </div>
-            <div class="main userlogin">
-                <h2>Welcome to the game!!</h2>
-
-                <br>
-                <p id="error"></p>
-                <br>
-                <form id="form1">
-                    <input type="text" id="user" placeholder="Enter your Name" required>
-                    <br>
-                    <br>
-                    <br>
-                    <button id="myButton1">Lets go</button>
-                </form>
-            </div>
-            <div class="main userGame">
-                <h2 id="greet">Hello Sumi</h2>
-                <h3>Choose from rock,paper scissors</h3>
-                <p><strong>Rock</strong> beats
-                    <strong>scissors</strong> beats
-                    <strong> paper</strong> and <strong>paper</strong>
-                    beats<strong> scissors</strong>
-                </p>
-                <div><input type="text" id="input">
-                    <button onclick="myfunction">Play</button>
-                </div>
-                <br>
-                <div>
-                    <p id="you">You: </p> ||
-                    <p id="com"> Comp:</p>
-                </div>
-                <div>
-                    <p id="result">result</p>
-                </div>
-                <hr>
-
-                <div>
-                    <h5>Scoreboard</h5>
-                    <p id="pscore">0</p>|
-                    <p id="cscore">0</p><br>
-                    <button onclick="reset()">Reset</button>
-                </div>
-
-                <footer class="myfooter">
-                    <p>&copy Layali 2024</p>
-                </footer>
-
-            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>
