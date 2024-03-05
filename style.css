@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px double violet;
+    background-color: black;
+    box-sizing: border-box;
+    color: white;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted violet
+
+}
+
+body{
+    margin: 0 auto;
+    padding: 0px;
+}
+.myfooter{
+    bottom: 0;
+    position: fixed;
+    color: violet;
+}
+h1{
+    font-size: 2rem;
+    color: violet;
+    margin: 0;
+   
+}
+input[type="button"]{
+    padding: 10px 20px;
+    background-color: violet;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 50px;
+}
