@@ -4,4 +4,7 @@ function rules(){
     main.style.display='none'
     let heading = document.getElementById("heading")
     heading.style.display='none'
+    let userlogin = document.querySelector(".userlogin")
+    userlogin.style.display="block";
 }
+
