@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let error = document.getElementById("error");
     
     myButton1.addEventListener('click', function(event) {
+        let user = document.getElementById("user").value;
+        let greet = document.getElementById("greet");
+        greet.innerHTML=`Hello ${user}`
+console.log(user)
         console.log("Let's go button clicked!"); // Debugging statement
         let userName = document.getElementById("user").value.trim();
         if (!userName || !/^[a-zA-Z]+$/.test(userName)) {
@@ -34,3 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+
