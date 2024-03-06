@@ -17,7 +17,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px dotted violet
+    border: 2px dotted violet;
+    
 
 }
 
@@ -75,7 +76,19 @@ p{
 }
 hr{
     width: 20rem;
+    color:aqua;
+    /* margin: 0 auto;
+    align-items: center; */
 }
 .userGame{
     display: none;
+    text-align: center;
+   
+}
+#myButton2{
+    background-color: violet;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 3px;
 }
