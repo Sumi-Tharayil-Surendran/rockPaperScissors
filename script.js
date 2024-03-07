@@ -39,5 +39,12 @@ console.log(user)
     });
 });
 
+function myfunction(){
+    let userChoice = document.getElementById("input").value;
+    let userShow=document.getElementById("you");
+    userShow.innerHTML="You: "+""  + userChoice;
+   userShow.style.color="yellow"
+
+}
 
 
