@@ -38,13 +38,66 @@ console.log(user)
         }
     });
 });
-
+    uscore=0;
+    comscore=0;
 function myfunction(){
     let userChoice = document.getElementById("input").value;
     let userShow=document.getElementById("you");
     userShow.innerHTML="You: "+""  + userChoice;
-   userShow.style.color="yellow"
+   userShow.style.color="yellow";
+   let computerChoice =Math.random();
+   if(computerChoice<0.34){
+    computerChoice="rock";
+   }
+   else if(computerChoice<=0.67){
+    computerChoice="paper";
+   }else{
+    computerChoice="scissors";
+   }
+   let compurtShow =document.getElementById("com");
+   compurtShow.innerHTML="Computer: "+ ""+computerChoice
+   compurtShow.style.color="tomato";
+   let result =document.getElementById("result").innerHTML
+   =compare(userChoice,computerChoice);
+  document.getElementById("input").value="";
+  let userscore= document.getElementById("uscore");
+  userscore.innerHTML="You:" +""+uscore;
+  let computerscore=document.getElementById("cscore");
+  computerscore.innerHTML= "computer:"+ "" +comscore
 
 }
+function compare(userChoice,computerChoice){
+    
+    if(userChoice==computerChoice){
+        return "its a tie";
+    }else if(userChoice=="rock"){
+        if(computerChoice=="scissors"){
+            uscore++;
+            return "Rock crushes scissors"
+        }else{
+            comscore++
+            return "paper wins"
+
+        }
+
+    }else if(userChoice=="scissors"){
+        if(computerChoice=="paper"){
+            uscore++;
+            return "scissors cut paper"
+        }else{
+            comscore++;
+            return "rock wins"
+        }
+    }else if(userChoice=="paper"){
+        if(computerChoice=="rock"){
+            uscore++;
+            return "Paper covers rock"
+        }else{
+            comscore++;
+            return "scissors wins"
+        }
+            
+        }
+    }
 
 
