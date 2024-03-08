@@ -99,5 +99,11 @@ function compare(userChoice,computerChoice){
             
         }
     }
-
+function reset(){
+    uscore=0;
+    comscore=0;
+    document.getElementById("uscore").innerHTML="You:" +""+uscore;
+    document.getElementById("cscore").innerHTML="computer:"+ "" +comscore;
+   
+}
 
